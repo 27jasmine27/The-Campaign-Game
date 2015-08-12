@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>2016 Election</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="heroic-features.css" rel="stylesheet">
+
+
+<!--WRONG/ RIGHT CSS-->
+   <style>
+   #right {
+    position: absolute
+    z-index: 2;
+    top:10%;
+    left:25%;
+    width:1000px;
+    height:700px;
+   }
+   #wrong{
+    position: absolute;
+    z-index: 2;
+    top:10%;
+    left:25%;
+    width:700px;
+    height:700px;
+   }
+   </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <img src="campaigngamelogo.png" width= "60px">
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="howto.html">How to Play</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1>Who said this?</h1>
+            <p id = "quote"></p>
+            <p><a id = "nextButton" class="btn btn-primary btn-large">Restart</a>
+
+            </p>
+        </header>
+        <hr>
+        <!--CORRECT-->
+        <img id = "right" src = "right.png"> </img>
+        <!--INCORRECT-->
+        <img id = "wrong" src = "wrong.png"> </img>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Pick the correct candidate.</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img id = "hillary" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg" alt="Hillary Clinton">
+                    <div class="caption">
+                 
+                        <p>
+                            <a href="#" id = "hillaryButton" class="btn btn-default">Hillary</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img id = "trump" src="trump.jpg" alt="trump">
+                    <div class="caption">
+                 
+                        <p>
+                            <a href="#" id = "trumpButton" class="btn btn-default">Trump</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img id = "cruz" src="cruz.jpg" alt="Hillary Clinton">
+                    <div class="caption">
+                        <p>
+                            <a href="#" id = "cruzButton" class="btn btn-default">Cruz</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img id = "bernie" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Bernie_Sanders.jpg" alt="Hillary Clinton">
+                    <div class="caption">
+                 
+                        <p>
+                            <a href="#" id = "bernieButton" class="btn btn-default">Bernie</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; the Campaign 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap.min.js"></script>
+        <!-- jQuery and Tabletop links -->
+    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+    <script src="tabletop1.3.4.js"></script>
+    <script src = "databasefinal.js"> </script>
+
+</body>
+
+</html>
+
+<!-- background color is off-white, the quote background is red, and the bar is blue-->
+
+

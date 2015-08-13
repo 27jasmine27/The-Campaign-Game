@@ -37,7 +37,7 @@ function scoreReport(){
 		$("#quote").html("You seem to know it all. Maybe you should run!");
 	}
 
-	$("#nextButton").fadeIn(400, 1);
+	$("#nextButton").fadeTo(1, 1);
 	$("#nextButton").click(function(){
 		location.reload();
 	});

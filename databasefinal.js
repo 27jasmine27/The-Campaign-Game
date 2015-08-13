@@ -47,8 +47,7 @@ function nextQuote(){
 	var quotes = [candList[0].quote1, candList[3].quote3, candList[1].quote2 , candList[3].quote2, candList[0].quote3, candList[2].quote1, candList[1].quote3, candList[3].quote1, candList[2].quote2, candList[0].quote2, candList[2].quote3, candList[1].quote1];
 	currCand += 1;
 	$("#quote").html(quotes[currCand]);
-	if(currCand > 12){
-		console.log(score);
+	if(currCand > quotes.length){
 		scoreReport();
 	}
 }
